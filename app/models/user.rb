@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	
+
 # 	Start with the fact that a user has many subscriptions. In this case, you
 # need to specify the foreign key to use. Normally, you would call this user_id ,
 # but you’re modeling leaders and followers, so call it follower_id instead .
@@ -19,6 +19,11 @@ has_many :leaders, through: :subscriptions
 
 has_many :reverse_subscriptions, foreign_key: :leader_id, class_name: 'Subscription', dependent: :destroy
 has_many :followers, through: :reverse_subscriptions
+
+has_many :posts, dependent: :destroy
+has_many :text_posts, dependent: :destroy
+has_many :image_posts, dependent: :destroy
+
 
 # Add a predicate method, a method returning a true or false value,
 # called following? to see if the current user is following another user. This
