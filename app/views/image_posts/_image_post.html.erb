@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<%= image_post.title %>
+		</h3>
+	</div>
+
+	<div class="panel-body">
+		<p><em>By <%= image_post.user.name %></em></p>
+
+		<%= image_tag image_post.url, class: "img-responsive" %>
+<!-- 
+This partial uses the ERB image_tag helper to add an image tag with the
+source set to image_post.url, the location of the image. This line also adds
+Bootstrap’s img-responsive class to the image, which causes it to scale auto-
+matically based on the browser width. -->
+
+		<%= image_post.body %>
+	</div>
+</div>
