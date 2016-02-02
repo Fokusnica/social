@@ -9,8 +9,4 @@ fsfdfs
 fdfdfdfdfdfd
 dfsdddddddddddddddd
 hhguiuiiu
-gwegr4etrte
-uuuuuuuuuu
-ккккккккккк
-ddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddd
+gwegr4etrtedddddd
